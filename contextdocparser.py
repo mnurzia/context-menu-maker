@@ -128,7 +128,7 @@ class ContextDocParser:
 				+self.documentObject["name"]+"\\command")
 			winreg.SetValueEx(fk,"",0,winreg.REG_SZ, \
 				self.documentObject["title"])
-			if self.documentObject["icon"]:
+			if "icon" in self.documentObject:
 				winreg.SetValueEx(fk,"Icon",0,winreg.REG_SZ, \
 				self.documentObject["icon"])
 			winreg.SetValueEx(fsk,"",0,winreg.REG_SZ,exe+" \""\

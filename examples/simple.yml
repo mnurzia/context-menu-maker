@@ -1,0 +1,19 @@
+name: 'random-settings'
+title: 'Settings'
+exists: [^folder]
+tree:
+    control-panel:
+        title: 'Control Panel'
+        icon:
+            handler: 'exefile'
+            executable: 'control.exe'
+        action: 'control.exe'
+    other-options:
+        title: 'Other...'
+        tree:
+            reg:
+                title: 'Registry Editor'
+                icon:
+                    handler: 'exefile'
+                    executable: 'regedit.exe'
+                action: 'regedit.exe'

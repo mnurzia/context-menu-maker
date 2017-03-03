@@ -133,7 +133,7 @@ class ContextDocParser:
 				self.documentObject["icon"])
 			winreg.SetValueEx(fsk,"",0,winreg.REG_SZ,exe+" \""\
 				+os.path.realpath(self.main+"\" \""\
-				+os.path.realpath(self.doc.name))+"\" run %1")
+				+os.path.realpath(self.doc.name))+"\" run %L")
 	def remove(self):
 		# Removes registry keys cleanly.
 		self.verify_uac()
